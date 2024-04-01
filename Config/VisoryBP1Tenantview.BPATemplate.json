@@ -21,7 +21,7 @@
         "id"
       ],
       "Command": "Get-CIPPUserNames",
-      "URL": "https://graph.microsoft.com/"
+      "URL": "https://graph.microsoft.com/v1.0/users"
     }
   ]
 }
