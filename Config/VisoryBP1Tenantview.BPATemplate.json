@@ -8,13 +8,18 @@
       "FrontendFields": [
         {
           "name": "users",
-          "value": "UserSettings",
+          "value": "UserSettings.displayName",
           "formatter": "string"
+        },
+        {
+          "name": "id",
+          "value": "UserSettings.id"
         }
       ],
       "StoreAs": "JSON",
       "ExtractFields": [
-        "displayName"
+        "displayName",
+        "id"
       ],
       "Command": "Get-CIPPUserNames",
       "URL": "https://graph.microsoft.com/v1.0/users"
