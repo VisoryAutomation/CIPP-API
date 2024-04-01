@@ -9,13 +9,12 @@
         {
           "name": "users",
           "value": "UserSettings",
-          "formatter": "table"
+          "formatter": "string"
         }
       ],
       "StoreAs": "JSON",
       "ExtractFields": [
-        "displayName",
-        "id"
+        "displayName"
       ],
       "Command": "Get-CIPPUserNames",
       "URL": "https://graph.microsoft.com/v1.0/users"
