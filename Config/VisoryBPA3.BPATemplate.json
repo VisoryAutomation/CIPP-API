@@ -15,6 +15,24 @@
       "StoreAs": "JSON",
       "Command": "Get-CIPPGlobalAdmins1",
       "URL": "https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=62e90394-69f5-4237-9190-012177145e10/members"
+    },
+    {
+      "name": "usersTable",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "userTable",
+          "value": "usersTable",
+          "formatter": "table"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "Graph",
+      "ExtractFields": [
+        "displayName",
+        "id"
+      ],
+      "URL": "https://graph.microsoft.com/beta/users"
     }
   ]
 }
