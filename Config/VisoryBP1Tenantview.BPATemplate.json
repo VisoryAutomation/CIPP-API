@@ -1,0 +1,27 @@
+{
+  "name": "Visory BP1 - Tenant view",
+  "style": "Tenant",
+  "Fields": [
+    {
+      "name": "UserSettings",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "user",
+          "value": "userSettings.displayName"
+        },
+        {
+          "name": "uid",
+          "value": "userSettings.id"
+        }
+      ],
+      "StoreAs": "JSON",
+      "ExtractFields": [
+        "displayName",
+        "id"
+      ],
+      "Command": "Get-CIPPUserNames",
+      "URL": "https://graph.microsoft.com/"
+    }
+  ]
+}
