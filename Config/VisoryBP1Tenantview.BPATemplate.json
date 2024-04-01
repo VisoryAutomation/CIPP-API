@@ -8,8 +8,8 @@
       "FrontendFields": [
         {
           "name": "users",
-          "value": "UserSettings.displayName",
-          "formatter": "string"
+          "value": "UserSettings",
+          "formatter": "table"
         },
         {
           "name": "id",
