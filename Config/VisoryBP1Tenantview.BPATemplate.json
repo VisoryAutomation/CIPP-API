@@ -8,11 +8,13 @@
       "FrontendFields": [
         {
           "name": "user",
-          "value": "userSettings.displayName"
+          "value": "userSettings.displayName",
+          "formatter": "table"
         },
         {
           "name": "uid",
-          "value": "userSettings.id"
+          "value": "userSettings.id",
+          "formatter": "table"
         }
       ],
       "StoreAs": "JSON",
