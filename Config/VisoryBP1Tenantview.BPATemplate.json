@@ -8,7 +8,7 @@
       "FrontendFields": [
         {
           "name": "users",
-          "value": "userSettings",
+          "value": "UserSettings",
           "formatter": "table"
         }
       ],
