@@ -7,13 +7,8 @@
       "UseExistingInfo": false,
       "FrontendFields": [
         {
-          "name": "user",
-          "value": "userSettings.displayName",
-          "formatter": "table"
-        },
-        {
-          "name": "uid",
-          "value": "userSettings.id",
+          "name": "users",
+          "value": "userSettings",
           "formatter": "table"
         }
       ],
