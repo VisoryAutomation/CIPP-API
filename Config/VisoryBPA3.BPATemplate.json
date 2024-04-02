@@ -37,6 +37,24 @@
         "id"
       ],
       "URL": "https://graph.microsoft.com/beta/users"
+    },
+    {
+      "name": "appleCertificate",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "appleCertExpiration",
+          "value": "appleCertificate",
+          "formatter": "table"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "Graph",
+      "ExtractFields": [
+        "appleIdentifier",
+        "expirationDateTime"
+      ],
+      "URL": "https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate"
     }
   ]
 }
