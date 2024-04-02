@@ -44,8 +44,8 @@
       "FrontendFields": [
         {
           "name": "appleCertTable",
-          "value": "appleCertificate",
-          "formatter": "table"
+          "value": "appleCertificate.expirationDateTime",
+          "formatter": "string"
         }
       ],
       "StoreAs": "JSON",
