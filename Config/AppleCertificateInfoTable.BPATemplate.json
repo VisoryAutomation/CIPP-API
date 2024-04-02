@@ -1,0 +1,24 @@
+{
+  "name": "Apple Certificate Info - Table",
+  "style": "Table",
+  "Fields": [
+    {
+      "name": "appleCertificate",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "appleCertTable",
+          "value": "appleCertificate",
+          "formatter": "table"
+        }
+      ],
+      "StoreAs": "JSON",
+      "ExtractFields": [
+        "appleIdentifier",
+        "expirationDateTime"
+      ],
+      "Command": "Get-CIPPAppleCertificateInfo",
+      "URL": "https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate"
+    }
+  ]
+}
