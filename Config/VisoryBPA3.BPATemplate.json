@@ -13,7 +13,11 @@
         }
       ],
       "StoreAs": "JSON",
-      "Command": "Get-CIPPGlobalAdmins1",
+      "API": "Graph",
+      "ExtractFields": [
+        "displayName",
+        "id"
+      ],
       "URL": "https://graph.microsoft.com/beta/directoryRoles/roleTemplateId=62e90394-69f5-4237-9190-012177145e10/members"
     },
     {
