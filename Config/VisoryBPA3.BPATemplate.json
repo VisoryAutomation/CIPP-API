@@ -43,7 +43,7 @@
       "UseExistingInfo": false,
       "FrontendFields": [
         {
-          "name": "appleCertExpiration",
+          "name": "appleCertTable",
           "value": "appleCertificate",
           "formatter": "table"
         }
