@@ -39,20 +39,20 @@
       "URL": "https://graph.microsoft.com/beta/users"
     },
     {
-      "name": "appleCertificate",
+      "name": "appleCertTable",
       "UseExistingInfo": false,
       "FrontendFields": [
         {
-          "name": "appleCertTable",
-          "value": "appleCertificate.expirationDateTime",
-          "formatter": "string"
+          "name": "appleCert",
+          "value": "appleCertTable",
+          "formatter": "table"
         }
       ],
       "StoreAs": "JSON",
       "API": "Graph",
       "ExtractFields": [
-        "appleIdentifier",
-        "expirationDateTime"
+        "expirationDateTime",
+        "appleIdentifier"
       ],
       "URL": "https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate"
     }
