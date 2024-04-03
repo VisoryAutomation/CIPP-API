@@ -1,0 +1,24 @@
+{
+  "name": "FunctionTest",
+  "style": "Table",
+  "Fields": [
+    {
+      "name": "AppleCrt",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "Apple Certificate Expiration",
+          "value": "AppleCrt",
+          "formatter": "table"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "CIPPFunction",
+      "ExtractFields": [
+        "appleIdentifier",
+        "expirationDateTime"
+      ],
+      "Command": "Get-CIPPAppleCertificateInfo"
+    }
+  ]
+}
