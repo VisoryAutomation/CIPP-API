@@ -55,6 +55,24 @@
         "appleIdentifier"
       ],
       "URL": "https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate"
+    },
+    {
+      "name": "devices",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "Devices",
+          "value": "devices",
+          "formatter": "table"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "Graph",
+      "ExtractFields": [
+        "userId",
+        "deviceName"
+      ],
+      "URL": "https://graph.microsoft.com/beta/manageddevices/devices"
     }
   ]
 }
