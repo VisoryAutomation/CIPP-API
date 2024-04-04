@@ -57,22 +57,22 @@
       "URL": "https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate"
     },
     {
-      "name": "devices",
+      "name": "apps",
       "UseExistingInfo": false,
       "FrontendFields": [
         {
-          "name": "Devices",
-          "value": "devices",
+          "name": "IntuneApps",
+          "value": "apps",
           "formatter": "table"
         }
       ],
       "StoreAs": "JSON",
       "API": "Graph",
       "ExtractFields": [
-        "userId",
-        "deviceName"
+        "displayName",
+        "id"
       ],
-      "URL": "https://graph.microsoft.com/beta/manageddevices/devices"
+      "URL": "https://graph.microsoft.com/beta/deviceappmanagement/mobileapps"
     }
   ]
 }
