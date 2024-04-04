@@ -1,0 +1,27 @@
+{
+  "name": "AppleCertTest",
+  "style": "Table",
+  "Fields": [
+    {
+      "name": "appleCertInfo",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "AppleCertReport",
+          "value": "appleCertInfo",
+          "formatter": "table"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "Graph",
+      "ExtractFields": [
+        "appleidentifier",
+        "expirationdatetime"
+      ],
+      "parameters": {
+        "asApp": false
+      },
+      "URL": "https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate"
+    }
+  ]
+}
