@@ -1,6 +1,6 @@
 {
   "name": "AppleCertTest",
-  "style": "Table",
+  "style": "Tenant",
   "Fields": [
     {
       "name": "appleCertInfo",
