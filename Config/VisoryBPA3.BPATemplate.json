@@ -73,6 +73,27 @@
         "id"
       ],
       "URL": "https://graph.microsoft.com/beta/deviceappmanagement/mobileapps"
+    },
+    {
+      "name": "devices",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "Intune Devices",
+          "value": "devices",
+          "formatter": "table"
+        }
+      ],
+      "StoreAs": "JSON",
+      "API": "Graph",
+      "ExtractFields": [
+        "deviceName",
+        "complianceState",
+        "operatingSystem",
+        "osVersion",
+        "isEncrypted"
+      ],
+      "URL": "https://graph.microsoft.com/beta/deviceManagement/managedDevices"
     }
   ]
 }
