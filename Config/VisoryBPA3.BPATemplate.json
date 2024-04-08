@@ -106,7 +106,7 @@
           "formatter": "table"
         }
       ],
-      "where": "$_.deviceName -like \"JKENDRICK-*\"",
+      "where": "$_.deviceName -like \"JKENDRICK-L*\"",
       "StoreAs": "JSON",
       "API": "Graph",
       "ExtractFields": [
