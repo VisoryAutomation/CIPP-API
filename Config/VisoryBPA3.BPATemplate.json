@@ -95,6 +95,28 @@
         "isEncrypted"
       ],
       "URL": "https://graph.microsoft.com/beta/deviceManagement/managedDevices"
+    },
+    {
+      "name": "devices2",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "returnSingleDevice",
+          "value": "devices2",
+          "formatter": "table"
+        }
+      ],
+      "where": "$_.deviceName -like \"JKENDRICK-*\"",
+      "StoreAs": "JSON",
+      "API": "Graph",
+      "ExtractFields": [
+        "deviceName",
+        "complianceState",
+        "operatingSystem",
+        "osVersion",
+        "isEncrypted"
+      ],
+      "URL": "https://graph.microsoft.com/beta/deviceManagement/managedDevices"
     }
   ]
 }
