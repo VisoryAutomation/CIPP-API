@@ -1,0 +1,46 @@
+{
+  "conditions": {
+    "deviceStates": null,
+    "clientAppTypes": [
+      "all"
+    ],
+    "users": {
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null,
+      "includeUsers": [
+        "All"
+      ],
+      "includeRoles": [],
+      "excludeGroups": [],
+      "includeGroups": [],
+      "excludeUsers": [],
+      "excludeRoles": []
+    },
+    "signInRiskLevels": [],
+    "userRiskLevels": [],
+    "applications": {
+      "applicationFilter": null,
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications": [],
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences": []
+    },
+    "clientApplications": null,
+    "times": null,
+    "locations": null,
+    "devices": null,
+    "platforms": null
+  },
+  "grantControls": {
+    "builtInControls": [
+      "mfa"
+    ],
+    "authenticationStrength": null,
+    "termsOfUse": [],
+    "customAuthenticationFactors": [],
+    "operator": "OR"
+  },
+  "displayName": "Visory: Require multifactor authentication for all users"
+}
