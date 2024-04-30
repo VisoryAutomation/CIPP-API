@@ -9,11 +9,11 @@
         {
           "name": "All Devices Compliant",
           "value": "compliance",
-          "formatter": "bool"
+          "formatter": "reverseBool"
         }
       ],
-      "where": "$_,complianceState -contains 'not compliant'",
-      "StoreAs": "JSON",
+      "where": "$_,complianceState -like 'not compliant'",
+      "StoreAs": "bool",
       "ExtractFields": [
         "complianceState"
       ],
