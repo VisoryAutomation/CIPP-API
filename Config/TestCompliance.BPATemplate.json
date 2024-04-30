@@ -1,0 +1,24 @@
+{
+  "name": "TestCompliance",
+  "style": "Tenant",
+  "Fields": [
+    {
+      "name": "compliance",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "All Devices Compliant",
+          "value": "compliance",
+          "formatter": "bool"
+        }
+      ],
+      "where": "$_,complianceState -contains 'not compliant'",
+      "StoreAs": "JSON",
+      "ExtractFields": [
+        "complianceState"
+      ],
+      "Command": "Get-CIPPManagedDevices",
+      "URL": "https://graph.microsoft.com/beta/deviceManagement/managedDevices"
+    }
+  ]
+}
