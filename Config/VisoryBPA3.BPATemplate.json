@@ -51,7 +51,7 @@
       "StoreAs": "JSON",
       "API": "Graph",
       "ExtractFields": [
-        "id",
+        "expirationDateTime",
         "appleIdentifier"
       ],
       "URL": "https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate"
